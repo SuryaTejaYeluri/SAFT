@@ -11,6 +11,7 @@ import java.util.*;
 
 public class ExecutionController {
     public static List<HashMap<String, String>> testCaseExecutionList = new ArrayList<HashMap<String, String>>();
+    public static String userDirectory = System.getProperty("user.dir");
 
     public static void readExecutionControllerExcel(){
 
@@ -19,8 +20,7 @@ public class ExecutionController {
         for(String testSuiteName:testSuiteNames){
             try
             {
-                FileInputStream executionControllerExcelFile = new FileInputStream(new File("ExecutionController.xlsx"));
-
+                FileInputStream executionControllerExcelFile = new FileInputStream(new File(userDirectory +File.separator+ "ExecutionController.xlsx"));
                 //Create Workbook instance holding reference to .xlsx file
                 XSSFWorkbook workbook = new XSSFWorkbook(executionControllerExcelFile);
 

@@ -39,7 +39,7 @@ public class TestCaseExecutor {
             //Initializing the screenshot count
             ControlData.testcaseScreenshotCount = 1;
 
-            ControlData.currTestSetExcelWorkbookFileName = "DataSheets"+ File.separator +executionParametersMap.get("TestSet")+".xlsx";
+            ControlData.currTestSetExcelWorkbookFileName = "dataSheets"+ File.separator +executionParametersMap.get("TestSet")+".xlsx";
             FileInputStream testSetExcelFile = new FileInputStream(new File(ControlData.currTestSetExcelWorkbookFileName));
 
             //Create Workbook instance holding reference to .xlsx file

@@ -17,7 +17,7 @@ public class Report {
     public static void generateReportTemplate(){
 
         String userDirectory = System.getProperty("user.dir");
-        ControlData.reportPath = userDirectory + File.separator + "Reports";
+        ControlData.reportPath = userDirectory + File.separator + "reports";
 
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMddhhmmss");
         LocalDateTime localDateTime = LocalDateTime.now();
